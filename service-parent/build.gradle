@@ -1,0 +1,33 @@
+plugins {
+    id 'java-library'
+}
+
+group 'org.example'
+version 'unspecified'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+//    api 'org.junit.jupiter:junit-jupiter-engine:5.8.1'
+//    api 'org.junit.jupiter:junit-jupiter:5.8.1'
+
+    api 'org.junit.jupiter:junit-jupiter-engine:5.8.1'
+    api 'org.junit.jupiter:junit-jupiter:5.8.1'
+
+//    api 'org.springframework.boot:spring-boot-starter-web:3.0.3'
+//
+//    api 'org.projectlombok:lombok:1.18.26'
+//
+//    api 'io.rest-assured:rest-assured:5.3.0'
+
+
+
+
+//    'org.junit.jupiter:junit-jupiter:5.8.1'
+}
+
+test {
+    useJUnitPlatform()
+}
