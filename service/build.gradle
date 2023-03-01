@@ -12,8 +12,7 @@ repositories {
 dependencies {
     implementation project(path: ':service-parent')
 
-//    api 'jakarta.validation:jakarta.validation-api:3.0.2'
-
+    api 'org.springframework.boot:spring-boot-starter-web:3.0.3'
 }
 
 test {

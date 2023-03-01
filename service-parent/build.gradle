@@ -10,24 +10,13 @@ repositories {
 }
 
 dependencies {
-//    api 'org.junit.jupiter:junit-jupiter-engine:5.8.1'
-//    api 'org.junit.jupiter:junit-jupiter:5.8.1'
-
     api 'org.junit.jupiter:junit-jupiter-engine:5.8.1'
     api 'org.junit.jupiter:junit-jupiter:5.8.1'
 
-//    api 'org.springframework.boot:spring-boot-starter-web:3.0.3'
-//
-//    api 'org.projectlombok:lombok:1.18.26'
-//
-//    api 'io.rest-assured:rest-assured:5.3.0'
+    api 'org.projectlombok:lombok:1.18.26'
+//    annotationProcessor 'org.projectlombok:lombok:1.18.26'
 
+    api 'jakarta.validation:jakarta.validation-api:3.0.2'
 
-
-
-//    'org.junit.jupiter:junit-jupiter:5.8.1'
-}
-
-test {
-    useJUnitPlatform()
+    api 'io.rest-assured:rest-assured:5.3.0'
 }
