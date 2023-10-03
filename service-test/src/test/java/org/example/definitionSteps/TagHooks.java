@@ -1,16 +1,14 @@
 package org.example.definitionSteps;
 
-import annotations.CucumberComponent;
-import clients.RestClient;
-import clients.WireMockClient;
+import org.example.annotations.CucumberComponent;
+import org.example.clients.RestClient;
+import org.example.clients.WireMockClient;
 import io.cucumber.java.After;
 import io.cucumber.java.Before;
 import io.restassured.http.Method;
-import lombok.extern.slf4j.Slf4j;
 import org.example.client.ExternalClient;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.stereotype.Component;
-import utils.session.Session;
+import org.example.utils.session.Session;
 
 import java.lang.management.ManagementFactory;
 

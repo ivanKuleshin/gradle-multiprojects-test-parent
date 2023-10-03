@@ -1,7 +1,7 @@
 package org.example.definitionSteps;
 
-import annotations.CucumberComponent;
-import clients.RestClient;
+import org.example.annotations.CucumberComponent;
+import org.example.clients.RestClient;
 import io.cucumber.java.en.Given;
 import io.restassured.http.Method;
 import org.springframework.beans.factory.annotation.Autowired;

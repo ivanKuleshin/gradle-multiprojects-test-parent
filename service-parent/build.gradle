@@ -20,3 +20,36 @@ dependencies {
 
     api 'io.rest-assured:rest-assured:5.3.0'
 }
+
+test {
+    systemProperty 'spring.profiles.active', 'test'
+    useJUnitPlatform()
+    exclude '**/componenttests/**'
+    exclude '**/integrationtests/**'
+    exclude '**/apitests/**'
+}
+
+tasks.register('componentTests', Test) {
+    group = "verification"
+    description = "Runs component tests"
+    useJUnitPlatform()
+    include '**/componenttests/**'
+    include '**/apitests/**'
+}
+
+tasks.register('integrationTests', Test) {
+    group = "verification"
+    description = "Runs integration tests"
+    useJUnitPlatform()
+    include '**/integrationtests/testsuits/MasterSuite.class'
+
+    systemProperty "junit.jupiter.execution.parallel.enabled", "true"
+
+    // Configure afterTest event listener
+    ignoreFailures = true
+    afterTest { TestDescriptor testDescriptor, TestResult testResult ->
+        if (testResult.resultType == TestResult.ResultType.FAILURE) {
+            logger.warn("[WARN] Integration tests failed. Check the test results.")
+        }
+    }
+}

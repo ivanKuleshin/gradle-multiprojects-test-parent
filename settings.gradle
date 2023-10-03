@@ -1,4 +1,4 @@
-rootProject.name = 'gradle-multiprojects-test'
+rootProject.name = 'gradle-multiprojects-test-parent'
 include 'service'
 include 'service-test'
 include 'service-parent'

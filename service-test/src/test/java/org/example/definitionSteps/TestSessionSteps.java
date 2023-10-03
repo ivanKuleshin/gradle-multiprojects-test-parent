@@ -6,15 +6,15 @@ import lombok.extern.slf4j.Slf4j;
 import org.example.model.Address;
 import org.example.model.Employee;
 import org.springframework.beans.factory.annotation.Autowired;
-import utils.ReadFileHelper;
-import utils.session.Session;
-import utils.session.SessionKey;
+import org.example.utils.ReadFileHelper;
+import org.example.utils.session.Session;
+import org.example.utils.session.SessionKey;
 
 import java.util.List;
 import java.util.Map;
 import java.util.stream.Collectors;
 
-import static utils.TestUtil.convertValueToList;
+import static org.example.utils.TestUtil.convertValueToList;
 
 
 @Slf4j

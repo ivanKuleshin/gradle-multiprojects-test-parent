@@ -5,10 +5,10 @@ import org.example.client.ExternalClient;
 import org.example.model.Address;
 import org.mockito.Mockito;
 import org.springframework.beans.factory.annotation.Autowired;
-import utils.TestUtil;
-import utils.session.Session;
+import org.example.utils.TestUtil;
+import org.example.utils.session.Session;
 
-import static utils.session.SessionKey.EXPECTED_MOCK_ADDRESS;
+import static org.example.utils.session.SessionKey.EXPECTED_MOCK_ADDRESS;
 
 
 public class MockitoSteps {

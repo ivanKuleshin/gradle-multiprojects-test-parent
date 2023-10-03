@@ -1,15 +1,14 @@
 package org.example.definitionSteps;
 
-import clients.RestClient;
+import org.example.clients.RestClient;
 import com.fasterxml.jackson.core.type.TypeReference;
-import exceptions.TestExecutionException;
+import org.example.exceptions.TestExecutionException;
 import io.cucumber.java.en.And;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 import io.restassured.http.Method;
 import io.restassured.response.Response;
-import lombok.extern.slf4j.Slf4j;
 import org.example.controller.EmployeeController;
 import org.example.exception.CustomRuntimeException;
 import org.example.model.Employee;
@@ -20,7 +19,7 @@ import org.springframework.boot.test.web.client.TestRestTemplate;
 import org.springframework.core.ParameterizedTypeReference;
 import org.springframework.http.HttpMethod;
 import org.springframework.http.ResponseEntity;
-import utils.session.Session;
+import org.example.utils.session.Session;
 
 import java.util.List;
 import java.util.Map;
@@ -28,13 +27,13 @@ import java.util.Objects;
 import java.util.stream.Collectors;
 
 import static org.assertj.core.api.AssertionsForClassTypes.assertThat;
-import static utils.TestUtil.castMapToObject;
-import static utils.TestUtil.convertValueToList;
-import static utils.session.SessionKey.ACTUAL_LIST;
-import static utils.session.SessionKey.ACTUAL_RESULT;
-import static utils.session.SessionKey.EXPECTED_LIST;
-import static utils.session.SessionKey.EXPECTED_RESULT;
-import static utils.session.SessionKey.RESPONSE;
+import static org.example.utils.TestUtil.castMapToObject;
+import static org.example.utils.TestUtil.convertValueToList;
+import static org.example.utils.session.SessionKey.ACTUAL_LIST;
+import static org.example.utils.session.SessionKey.ACTUAL_RESULT;
+import static org.example.utils.session.SessionKey.EXPECTED_LIST;
+import static org.example.utils.session.SessionKey.EXPECTED_RESULT;
+import static org.example.utils.session.SessionKey.RESPONSE;
 
 //@Slf4j
 public class EmployeeSteps {

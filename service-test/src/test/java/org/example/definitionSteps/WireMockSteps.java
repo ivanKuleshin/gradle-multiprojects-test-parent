@@ -1,20 +1,20 @@
 package org.example.definitionSteps;
 
-import clients.RestClient;
-import clients.WireMockClient;
+import org.example.clients.RestClient;
+import org.example.clients.WireMockClient;
 import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.ObjectMapper;
-import exceptions.TestExecutionException;
+import org.example.exceptions.TestExecutionException;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 
 import lombok.SneakyThrows;
 import org.springframework.beans.factory.annotation.Autowired;
-import utils.session.Session;
+import org.example.utils.session.Session;
 
-import static utils.TestUtil.invalidateParam;
-import static utils.session.SessionKey.STUB_REQUEST;
-import static utils.session.SessionKey.STUB_RESPONSE;
+import static org.example.utils.TestUtil.invalidateParam;
+import static org.example.utils.session.SessionKey.STUB_REQUEST;
+import static org.example.utils.session.SessionKey.STUB_RESPONSE;
 
 
 public class WireMockSteps {

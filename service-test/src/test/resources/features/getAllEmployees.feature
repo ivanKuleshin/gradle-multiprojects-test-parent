@@ -1,6 +1,6 @@
 @employee
 @resetWireMock
-@ignore
+
 Feature: Get All Employees from the repository
   This feature contains BDD scenarios for Get All Employees from the repository
 

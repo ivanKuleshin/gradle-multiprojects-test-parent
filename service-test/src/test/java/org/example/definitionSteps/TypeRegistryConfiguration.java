@@ -1,13 +1,11 @@
 package org.example.definitionSteps;
 
-import clients.RestClient;
-import io.cucumber.java.DataTableType;
+import org.example.clients.RestClient;
 import io.cucumber.java.ParameterType;
 import io.restassured.http.Method;
 import org.example.model.Employee;
 
 import java.util.List;
-import java.util.Map;
 import java.util.stream.Stream;
 
 public class TypeRegistryConfiguration {
